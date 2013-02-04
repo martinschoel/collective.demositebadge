@@ -1,0 +1,5 @@
+<div title = ''
+     tal:content="view/show_title">
+</div>
+<img src="++resource++testing-site.png" style="z-index: 100; position: absolute; top: 0; left: 0; border: 0;" alt="Testing Site"/>
+<img src="++resource++testing-site-right.png" style="z-index: 100; position: absolute; top: 0; right: 0; border: 0;" alt="Testing Site"/>
