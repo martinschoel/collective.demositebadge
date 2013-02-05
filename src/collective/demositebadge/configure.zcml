@@ -1,5 +1,6 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:five="http://namespaces.zope.org/five"
     xmlns:i18n="http://namespaces.zope.org/i18n"
@@ -10,7 +11,7 @@
   <!-- -*- extra stuff goes here -*- -->
   <browser:viewlet
     name="collective.demositebadge"
-    manager="plone.app.layout.viewlets.interfaces.IHtmlHead"
+    manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
     template="template.pt"
     permission="zope2.View"
     class=".viewlets.DemoSiteBadgeViewlet"
@@ -21,9 +22,22 @@
     image="testing-site.png"
    />
    
-   <browser:resource
+  <browser:resource
     name="testing-site-right.png"
     image="testing-site-right.png"
    />
+   
+  <browser:resource
+    name="style.css"
+    file="./skins/style.css"   
+  />
+  
+  <genericsetup:registerProfile
+    name="settings"
+    title="collective.demositebadge"
+    directory="./profiles/settings"
+    description="Settings for my package"
+    provides="Products.GenericSetup.interfaces.EXTENSION"
+  />
 
 </configure>
