@@ -1,0 +1,17 @@
+img.left {
+    border:0;
+    position: absolute;
+    top: 0;
+    border: 0;
+    margin-left: 0;
+    z-index: 6
+}
+
+
+img.right {
+    border:0;
+    position: absolute;
+    top: 0;
+    border: 0;
+    right: 0;
+}
