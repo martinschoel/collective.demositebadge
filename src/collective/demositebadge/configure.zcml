@@ -39,5 +39,12 @@
     description="Settings for my package"
     provides="Products.GenericSetup.interfaces.EXTENSION"
   />
+  
+  <browser:page
+    name="badge-controlpanel"
+    for = "*"
+    permission="cmf.ManagePortal"
+    class=".controlpanel.ControlPanelView"
+  />
 
 </configure>
