@@ -1,5 +1,5 @@
-<div title = ''
-     tal:content="view/show_title">
-</div>
-<img class="left" src="++resource++testing-site.png" alt="Testing Site"/>
-<img class="right" src="++resource++testing-site-right.png" alt="Testing Site"/>
+<img class="left"
+     src="++resource++testing-site.png" alt="Testing Site"
+     tal:condition="view/available"
+     />
+
