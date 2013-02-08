@@ -1,5 +1,8 @@
-<img class="left"
-     src="++resource++testing-site.png" alt="Testing Site"
-     tal:condition="view/available"
-     />
-
+<span id="1" class="text" tal:condition="view/avaliable" tal:content="view/text">
+</span>
+<!--script>
+  var p = $("#1");
+  p.css('left','10')
+  width = parseInt(p.css('width'));
+  p.css('top',Math.sqrt((width*width)/2)/2);
+</script-->
