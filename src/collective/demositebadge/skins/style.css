@@ -1,16 +1,20 @@
-img.left {
-    border:0;
+.text {
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    background-color: #A60000;
+    border-bottom: 2px dotted white;
+    border-top: 2px dotted white;
+    color: #F4D6D9;
+    display: block;
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: bold;
+    left: -54px;
+    padding: 2px;
     position: absolute;
-    top: 0;
-    border: 0;
-    margin-left: 0;
-}
-
-
-img.right {
-    border:0;
-    position: absolute;
-    top: 0;
-    border: 0;
-    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    top: 40px;
+    width: 176px;
+    z-index: 1000;
 }
