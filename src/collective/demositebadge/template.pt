@@ -1,3 +1,2 @@
-<script></script>
 <span id="1" class="text" tal:condition="view/avaliable" tal:content="view/text">
 </span>
