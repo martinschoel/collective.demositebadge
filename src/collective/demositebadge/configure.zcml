@@ -32,6 +32,11 @@
     file="./skins/style.css"   
   />
   
+  <browser:resource
+    name="badge.js"
+    file="./skins/badge.js"
+  />
+  
   <genericsetup:registerProfile
     name="settings"
     title="collective.demositebadge"
