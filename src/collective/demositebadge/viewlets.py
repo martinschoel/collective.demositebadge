@@ -11,7 +11,8 @@ class DemoSiteBadgeViewlet(base.ViewletBase):
     text = None
     registry = None
     
-    def avaliable(self):
+    def available(self):
+        registry = getUtility(IRegistry)
     
         if self.registry[\
                 'collective.demositebadge.interfaces.IBadgeSettings.check']\
