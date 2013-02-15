@@ -1,2 +1,2 @@
-<span id="1" class="text" tal:condition="view/avaliable" tal:content="view/text">
+<span id="1" class="text" tal:condition="view/available" tal:content="view/text">
 </span>
