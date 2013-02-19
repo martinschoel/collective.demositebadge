@@ -19,12 +19,12 @@
   
   <browser:resource
     name="style.css"
-    file="./skins/style.css"   
+    file="./browser/style.css"   
     />
   
   <browser:resource
     name="badge.js"
-    file="./skins/badge.js"
+    file="./browser/badge.js"
     />
   
   <genericsetup:registerProfile
