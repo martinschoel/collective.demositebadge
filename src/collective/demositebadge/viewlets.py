@@ -8,14 +8,12 @@ from plone.registry.interfaces import IRegistry
 
 class DemoSiteBadgeViewlet(base.ViewletBase):
 
-    text = None
-    registry = None
-    
+   
     def available(self):
         registry = getUtility(IRegistry)
     
         if self.registry[\
-                'collective.demositebadge.interfaces.IBadgeSettings.check']\
+                'collective.demositebadge.interfaces.IBadgeSettings.check'] \
            and self.registry[\
                 'collective.demositebadge.interfaces.IBadgeSettings.text']:
             return True
@@ -23,10 +21,9 @@ class DemoSiteBadgeViewlet(base.ViewletBase):
             return False
     
     def update(self):
-    
         context = aq_inner(self.context)
         portal = getMultiAdapter((context, self.request),
-                                 name=u'plone_portal_state').portal()
+            name=u'plone_portal_state').portal()
         self.registry = getUtility(IRegistry)
         self.text = self.registry[\
             'collective.demositebadge.interfaces.IBadgeSettings.text']
