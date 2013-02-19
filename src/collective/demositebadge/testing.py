@@ -9,7 +9,7 @@ from plone.testing import z2
 from zope.configuration import xmlconfig
 
 
-class CollectivedemositebadgeLayer(PloneSandboxLayer):
+class CollectiveDemoSiteBadgeLayer(PloneSandboxLayer):
 
     defaultBases = (PLONE_FIXTURE,)
 
@@ -23,20 +23,12 @@ class CollectivedemositebadgeLayer(PloneSandboxLayer):
         )
     
     def setUpPloneSite(self, portal):
-        
-#        applyProfile(portal, 'collective.demositebadge:settings')
-        quickInstallProduct(portal,'collective.demositebadge')
-
-        # Install products that use an old-style initialize() function
-        #z2.installProduct(app, 'Products.PloneFormGen')
-
-#    def tearDownZope(self, app):
-#        # Uninstall products installed above
-#        z2.uninstallProduct(app, 'Products.PloneFormGen')
+        quickInstallProduct(portal, 'collective.demositebadge')
 
 
-COLLECTIVE_DEMOSITEBADGE_FIXTURE = CollectivedemositebadgeLayer()
+
+COLLECTIVE_DEMOSITEBADGE_FIXTURE = CollectiveDemoSiteBadgeLayer()
 COLLECTIVE_DEMOSITEBADGE_INTEGRATION_TESTING = IntegrationTesting(
     bases=(COLLECTIVE_DEMOSITEBADGE_FIXTURE,),
-    name="CollectivedemositebadgeLayer:Integration"
+    name="CollectiveDemoSiteBadgeLayer:Integration"
 )
