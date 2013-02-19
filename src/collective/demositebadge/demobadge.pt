@@ -1,0 +1,2 @@
+<span id="badge" class="text" tal:condition="view/available" tal:content="view/text">
+</span>
