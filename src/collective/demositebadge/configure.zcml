@@ -12,44 +12,34 @@
   <browser:viewlet
     name="collective.demositebadge"
     manager="plone.app.layout.viewlets.interfaces.IPortalTop"
-    template="template.pt"
+    template="demobadge.pt"
     permission="zope2.View"
     class=".viewlets.DemoSiteBadgeViewlet"
-   />
-    
-  <browser:resource
-    name="testing-site.png"
-    image="testing-site.png"
-   />
-   
-  <browser:resource
-    name="testing-site-right.png"
-    image="testing-site-right.png"
-   />
-   
+    />
+  
   <browser:resource
     name="style.css"
     file="./skins/style.css"   
-  />
+    />
   
   <browser:resource
     name="badge.js"
     file="./skins/badge.js"
-  />
+    />
   
   <genericsetup:registerProfile
-    name="settings"
+    name="default"
     title="collective.demositebadge"
-    directory="./profiles/settings"
-    description="Settings for my package"
+    directory="./profiles/default"
+    description="Install Demo Site Badge Addon"
     provides="Products.GenericSetup.interfaces.EXTENSION"
-  />
+    />
   
   <browser:page
     name="badge-controlpanel"
     for = "*"
     permission="cmf.ManagePortal"
     class=".controlpanel.ControlPanelView"
-  />
+    />
 
 </configure>
