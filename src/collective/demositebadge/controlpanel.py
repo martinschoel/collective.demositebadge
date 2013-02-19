@@ -14,4 +14,4 @@ class ControlPanelForm(RegistryEditForm):
     
     
 ControlPanelView = layout.wrap_form(ControlPanelForm, ControlPanelFormWrapper)
-ControlPanelView.label = u"Demo site badge"
+ControlPanelView.label = u"Demo Site Badge"
