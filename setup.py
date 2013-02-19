@@ -4,7 +4,7 @@ import os
 version = '0.1'
 
 long_description = (
-    open('README.txt').read()
+    open('README.rst').read()
     + '\n' +
     'Contributors\n'
     '============\n'
@@ -16,7 +16,7 @@ long_description = (
 
 setup(name='collective.demositebadge',
       version=version,
-      description="Bedge for demosites",
+      description="Provides sticky badge for demo sites.",
       long_description=long_description,
       # Get more strings from
       # http://pypi.python.org/pypi?%3Aaction=list_classifiers
