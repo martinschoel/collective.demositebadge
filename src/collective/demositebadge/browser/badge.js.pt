@@ -1,0 +1,28 @@
+var demo_site_badge_label = '<tal:js replace="view/get_demo_label" />';
+var available = '<tal:js replace="view/available" />';
+
+jQuery(document).ready(function(){
+    // let's try to calculate badge position to look nice
+    if (!demo_site_badge_label || (available == 'False')) {
+        return;
+    }
+    else{
+        jQuery('body').prepend('<span id="demo-site-badge" class="text">'
+            +demo_site_badge_label+'</span>');
+        badge = jQuery('#demo-site-badge');
+        var width = parseInt(badge.css('width'));
+    
+        // calculate badge top and left positions, a bit of geometry
+        var top = Math.sqrt((width * width) / 2) / 2;
+        var left = width / 2 - top;
+    
+        // set badge position, we add here extra pixels to left to ajust for
+        // badge height
+        badge.css('top', top);
+        badge.css('left', -1*(left+20));
+    
+        // also make it a bit wider to have label 
+        //positioned in the center nicely
+        badge.css('width', width+70);
+    }
+});
