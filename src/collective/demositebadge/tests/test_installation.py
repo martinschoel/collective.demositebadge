@@ -23,7 +23,7 @@ class TestInstallation(unittest.TestCase):
     
     def test_js_registration(self):
         jsRegistry = getToolByName(self.portal, 'portal_javascripts')
-        self.assertTrue('++resource++badge.js' in jsRegistry.getResourceIds())
+        self.assertTrue('demo-site-badge.js' in jsRegistry.getResourceIds())
     
     def test_css_registration(self):
         cssRegistry = getToolByName(self.portal, 'portal_css')
