@@ -9,22 +9,18 @@
   <five:registerPackage package="." initialize=".initialize" />
 
   <!-- -*- extra stuff goes here -*- -->
-  <browser:viewlet
-    name="collective.demositebadge"
-    manager="plone.app.layout.viewlets.interfaces.IPortalTop"
-    template="demobadge.pt"
+  
+  <browser:page
+    name="demo-site-badge.js"
+    class=".views.DemoSiteBadgeView"
+    template="./browser/badge.js.pt"
+    for="*"
     permission="zope2.View"
-    class=".viewlets.DemoSiteBadgeViewlet"
     />
   
   <browser:resource
     name="style.css"
     file="./browser/style.css"   
-    />
-  
-  <browser:resource
-    name="badge.js"
-    file="./browser/badge.js"
     />
   
   <genericsetup:registerProfile
