@@ -1,3 +1,0 @@
-<registry>
-    <records interface="collective.demositebadge.interfaces.IBadgeSettings"/>
-</registry>
