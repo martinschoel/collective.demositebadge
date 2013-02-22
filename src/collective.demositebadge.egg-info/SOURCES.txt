@@ -10,7 +10,10 @@ src/collective.demositebadge.egg-info/not-zip-safe
 src/collective.demositebadge.egg-info/requires.txt
 src/collective.demositebadge.egg-info/top_level.txt
 src/collective/demositebadge/__init__.py
+src/collective/demositebadge/controlpanel.py
+src/collective/demositebadge/interfaces.py
 src/collective/demositebadge/testing.py
 src/collective/demositebadge/viewlets.py
 src/collective/demositebadge/tests/__init__.py
 src/collective/demositebadge/tests/test_example.py
+src/collective/demositebadge/tests/test_installation.py
