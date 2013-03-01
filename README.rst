@@ -52,8 +52,37 @@ To install this add-on using buildout.cfg file you need to do next things:
       
 .. image:: ./badge.png
 
-      
+Installation on Plone 3
+------------------------
+To install this package on Plone 3 you need to do step 1 from 
+Installation using buildout.cfg file, and also do next things:
 
+       1. Add the following to your buildout.cfg file:
+       
+       ``[buildout]``
+       
+       ``...`` 
+       
+       ``extends = ``
+             ``http://good-py.appspot.com/release/plone.app.registry/1.0b1``
+       
+       ``...``
+      
+      ``[versions]``
+      
+      ``plone.z3cform = 0.6.0``
+      ``zope.i18n = 3.6.0``
+      
+      ``[instance]``
+      
+      ``...``
+      
+        ``zcml = ``
+              ``plone.app.registry``          
+       
+       2. After rerunning buildout.cfg and restarting Zope instance go to 
+          ``Site Setup -> Add-ons`` find ``Configuration registry 1.0b1 ``
+          and activate it.
 
 Usage
 =====
@@ -62,3 +91,10 @@ Go to ``Site Setup-> Add-on Configuration`` and follow the ``Demo site badge``
 link.
 Type some text into ``Text to show`` field, check ``Display badge`` checkbox
 and press the ``Save`` button. 
+
+
+Notes
+=====
+If you are using Firefox 4 browser you can face a problem that DemoSite Badge 
+doesn't react on the switches. To solve this problem you should to disable
+``base2-dom-fp.js`` on ``portal_javascripts``
