@@ -40,6 +40,7 @@ setup(name='collective.demositebadge',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'plone.app.registry'
           # -*- Extra requirements: -*-
       ],
       extras_require={'test': ['plone.app.testing']},
