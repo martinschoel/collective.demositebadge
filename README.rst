@@ -48,10 +48,6 @@ To install this add-on using buildout.cfg file you need to do next things:
    2. Rerun buildout and restart your Zope instance.
    3. Install the Add-on in Your Plone Site. Go to ``Site Setup -> Add-ons``, 
       find ``collective.demositebadge``, check it and press ``Activate`` button.
-      After doing that you should see this:
-      
-.. image:: ./badge.png
-
    4. After that go to ``Zope management interface ->portal-javascripts``, 
       find ``demo-site-badge.js`` and check ``Inline rendering`` checkbox 
 
