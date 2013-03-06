@@ -7,6 +7,5 @@
         cookable="True"
         enabled="1"
         expression=""
-        insert-after="toc.js"
     />
 </object>
