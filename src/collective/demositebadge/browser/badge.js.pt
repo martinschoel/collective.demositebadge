@@ -1,4 +1,4 @@
-var available = '<tal:js replace="view/available" />';
+var available = '<tal:js replace="view/get_demo_label" />';
 
 
 jQuery(document).ready(function(){
