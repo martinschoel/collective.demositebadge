@@ -52,10 +52,13 @@ To install this add-on using buildout.cfg file you need to do next things:
       
 .. image:: ./badge.png
 
+   4. After that go to ``Zope management interface ->portal-javascripts``, 
+      find ``demo-site-badge.js`` and check ``Inline rendering`` checkbox 
+
 Installation on Plone 3
 ------------------------
 To install this package on Plone 3 you need to do step 1 from 
-Installation using buildout.cfg file, and also do next things:
+``Installation using buildout.cfg file``, and also do next things:
 
        1. Add the following to your buildout.cfg file:
        
@@ -83,6 +86,8 @@ Installation using buildout.cfg file, and also do next things:
        2. After rerunning buildout.cfg and restarting Zope instance go to 
           ``Site Setup -> Add-ons`` find ``Configuration registry 1.0b1 ``
           and activate it.
+       
+       3. Do step 4 from ``Installation using buildout.cfg file``.
 
 Usage
 =====
