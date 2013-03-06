@@ -9,7 +9,7 @@ from Acquisition import aq_inner
 
 class DemoSiteBadgeView(BrowserView):
     
-    def available(self):
+    def get_demo_label(self):
         context = aq_inner(self.context)
         portal = getMultiAdapter((context, self.request),
             name=u'plone_portal_state').portal()
