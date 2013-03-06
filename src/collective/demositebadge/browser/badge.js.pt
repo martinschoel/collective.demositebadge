@@ -1,14 +1,14 @@
-var demo_site_badge_label = '<tal:js replace="view/get_demo_label" />';
 var available = '<tal:js replace="view/available" />';
+
 
 jQuery(document).ready(function(){
     // let's try to calculate badge position to look nice
-    if (!demo_site_badge_label || (available == 'False')) {
+    if (available == '') {
         return;
     }
     else{
         jQuery('body').prepend('<span id="demo-site-badge" class="text">'
-            +demo_site_badge_label+'</span>');
+            +available+'</span>');
         badge = jQuery('#demo-site-badge');
         var width = parseInt(badge.css('width'));
     
