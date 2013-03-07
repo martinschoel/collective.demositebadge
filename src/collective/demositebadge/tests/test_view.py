@@ -32,41 +32,34 @@ class TestExample(unittest.TestCase):
 
     
     
-    def test_get_demo_label(self):
-        res = self.view.get_demo_label()
+   def test_get_demo_label(self):
         registry = getUtility(IRegistry)
-        self.assertEqual(registry[
-            'collective.demositebadge.interfaces.IBadgeSettings.text'], res)     
 
-        
-    def test_available(self):
-        registry = getUtility(IRegistry)
-        
         registry['collective.demositebadge.interfaces.IBadgeSettings.check'] =\
             True
         registry['collective.demositebadge.interfaces.IBadgeSettings.text'] =\
             u'Testing site'
-        result = self.view.available()
-        self.assertTrue(result)
-        
+        result = self.view.get_demo_label()
+        self.assertEqual(result,'Testing site')
+
         registry['collective.demositebadge.interfaces.IBadgeSettings.check'] =\
             False
         registry['collective.demositebadge.interfaces.IBadgeSettings.text'] =\
             u'Testing site'
-        result = self.view.available()
-        self.assertFalse(result)
-        
+        result = self.view.get_demo_label()
+        self.assertEqual(result,'')
+
         registry['collective.demositebadge.interfaces.IBadgeSettings.check'] =\
             True
         registry['collective.demositebadge.interfaces.IBadgeSettings.text'] =\
             u''
-        result = self.view.available()
-        self.assertFalse(result)
-        
+        result = self.view.get_demo_label()
+        self.assertEqual(result,'')
+
         registry['collective.demositebadge.interfaces.IBadgeSettings.check'] =\
             False
         registry['collective.demositebadge.interfaces.IBadgeSettings.text'] =\
             u''
-        result = self.view.available()
-        self.assertFalse(result)
+        result = self.view.get_demo_label()
+        self.assertEqual(result,'')
 
