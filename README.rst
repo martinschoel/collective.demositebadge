@@ -93,9 +93,3 @@ link.
 Type some text into ``Text to show`` field, check ``Display badge`` checkbox
 and press the ``Save`` button. 
 
-
-Notes
-=====
-If you are using Firefox 4 browser you can face a problem that DemoSite Badge 
-doesn't react on the switches. To solve this problem you should disable
-``base2-dom-fp.js`` on ``portal_javascripts``
