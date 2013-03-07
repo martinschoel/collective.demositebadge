@@ -18,7 +18,7 @@ from collective.demositebadge.testing import \
 
 
 # TODO: add proper name to testing class
-class TestExample(unittest.TestCase):
+class TestView(unittest.TestCase):
 
     layer = COLLECTIVE_DEMOSITEBADGE_INTEGRATION_TESTING
 
