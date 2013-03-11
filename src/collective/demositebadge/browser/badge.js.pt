@@ -3,7 +3,7 @@ var demo_badge_label = '<tal:js replace="view/get_demo_label" />';
 
 jQuery(document).ready(function(){
     // let's try to calculate badge position to look nice
-    if (available == '') {
+    if (demo_badge_label == '') {
         return;
     }
     else{
