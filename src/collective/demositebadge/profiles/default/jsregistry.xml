@@ -7,5 +7,6 @@
         cookable="True"
         enabled="1"
         expression=""
+        inline="True"
     />
 </object>
