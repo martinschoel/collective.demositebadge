@@ -32,7 +32,7 @@ class TestView(unittest.TestCase):
 
     
     
-   def test_get_demo_label(self):
+    def test_get_demo_label(self):
         registry = getUtility(IRegistry)
 
         registry['collective.demositebadge.interfaces.IBadgeSettings.check'] =\
