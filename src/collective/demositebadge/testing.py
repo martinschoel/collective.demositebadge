@@ -16,6 +16,12 @@ class CollectiveDemoSiteBadgeLayer(PloneSandboxLayer):
     def setUpZope(self, app, configurationContext):
         # Load ZCML
         import collective.demositebadge
+        import plone.app.registry
+        xmlconfig.file(
+            'configure.zcml',
+            plone.app.registry,
+            context=configurationContext
+        )
         xmlconfig.file(
             'configure.zcml',
             collective.demositebadge,
@@ -23,6 +29,7 @@ class CollectiveDemoSiteBadgeLayer(PloneSandboxLayer):
         )
     
     def setUpPloneSite(self, portal):
+        quickInstallProduct(portal, 'plone.app.registry')
         quickInstallProduct(portal, 'collective.demositebadge')
 
 
