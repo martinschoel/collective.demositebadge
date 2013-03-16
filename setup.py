@@ -6,11 +6,6 @@ version = '0.1'
 long_description = (
     open('README.rst').read()
     + '\n' +
-    'Contributors\n'
-    '============\n'
-    + '\n' +
-    open('CONTRIBUTORS.txt').read()
-    + '\n' +
     open('CHANGES.txt').read()
     + '\n')
 
