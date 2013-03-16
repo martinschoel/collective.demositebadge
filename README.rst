@@ -15,12 +15,12 @@ This add-on was tested for Plone 3 and Plone 4.
 Installation
 ------------
 
-* add the following to your buildout configuration file
+* add the following to your buildout configuration file::
 
-  ``[buildout]``
-  ``...``
-  ``eggs = collective.demositebadge``
-  ``...``
+  [buildout]
+  ...
+  eggs = collective.demositebadge
+  ...
 
 * rerun buildout and restart your Zope instance.
 * then install the ``collective.demositebadge`` package from within the
@@ -46,23 +46,23 @@ Plone 3 Notes
 To install and use this add-on on Plone 3 you need to do some extra steps:
 
 * use ``plone.app.registry`` fixed versions set; for this add the following to
-  your buildout configuration file:
+  your buildout configuration file::
 
-  ``[buildout]``
-  ``...`` 
-  ``extends = ``
-       ``http://good-py.appspot.com/release/plone.app.registry/1.0b1``
-  ``...``
+  [buildout]
+  ...
+  extends =
+       http://good-py.appspot.com/release/plone.app.registry/1.0b1
+  ...
 
-  ``[versions]``
-  ``plone.z3cform = 0.6.0``
-  ``zope.i18n = 3.6.0``
+  [versions]
+  plone.z3cform = 0.6.0
+  zope.i18n = 3.6.0
 
-  ``[instance]``
-  ``...``
-  ``zcml = ``
-      ```...```
-      ``plone.app.registry``
+  [instance]
+  ...
+  zcml =
+      ...
+      plone.app.registry
 
 * and before Activating demo badge addon, you have to make sure 'Configuration registry' is activated (installed) in your Add-ons Control Panel
 
