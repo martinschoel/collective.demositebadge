@@ -1,6 +1,6 @@
 <object>
     <stylesheet
-        id="++resource++style.css"
+        id="++resource++demo-site-badge.css"
         cacheable="True"
         compression="safe"
         cookable="True"
@@ -9,6 +9,5 @@
         media=""
         rel="stylesheet"
         rendering="import"
-        insert-after="ploneKss.css"
     />
 </object>
