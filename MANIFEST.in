@@ -1,4 +1,9 @@
-recursive-include collective *
+include *.rst
+include *.txt
+include *.py
+include *.cfg
+include .gitignore
+recursive-include src *
 recursive-include docs *
 global-exclude *pyc
 global-exclude *mo
