@@ -1,8 +1,8 @@
 Changelog
 =========
 
-0.1-dev (unreleased)
+1.0 - March 16, 2013
 --------------------
 
-- Package created using templer
-  [Victor]
+- Initial implementation.
+  [Victor Imenkov]
