@@ -9,24 +9,24 @@
   <five:registerPackage package="." initialize=".initialize" />
 
   <!-- -*- extra stuff goes here -*- -->
-  
+
   <browser:page
     name="demo-site-badge.js"
     class=".views.DemoSiteBadgeView"
-    template="./browser/badge.js.pt"
+    template="resources/badge.js.pt"
     for="*"
     permission="zope2.View"
     />
-  
+
   <browser:resource
-    name="style.css"
-    file="./browser/style.css"   
+    name="demo-site-badge.css"
+    file="resources/styles.css"
     />
-  
+
   <genericsetup:registerProfile
     name="default"
     title="collective.demositebadge"
-    directory="./profiles/default"
+    directory="profiles/default"
     description="Install Demo Site Badge Addon"
     provides="Products.GenericSetup.interfaces.EXTENSION"
     />
